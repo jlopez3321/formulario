@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <!-- Enlace a la hoja de estilos externa -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form name="formulario" action="" method="post" id="formulario" onsubmit="return validarForm()">
+        <fieldset>
+            <legend>FORMULARIO</legend>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre"><br><br>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" name="apellidos" id="apellidos"><br><br>
+
+            <!-- Usamos los atributos min y max para especificar el rango de valores válidos -->
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" id="edad" min="0" max="105">
+            <br><br> 
+
+            <label for="nif">NIF:</label>
+            <input type="text" name="nif" id="nif">
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <br><br>
+
+            <label for="provincia">Provincia:</label>
+            <select name="provincia" id="provincia">
+                <option value="madrid">Madrid</option>
+                <option value="barcelona">Barcelona</option>
+                <option value="sevilla">Sevilla</option>
+                <option value="zaragoza">Zaragoza</option>
+                <option value="bilbao">Bilbao</option>
+                <option value="valencia">Valencia</option>
+                <option value="granada">Granada</option>
+                <option value="lleida">Lleida</option>
+            </select>
+            <br><br>
+
+            <input type="reset" value="LIMPIAR" id="boton">
+            <br><br>
+
+            <input type="submit" value="ENVIAR" id="boton">
+        </fieldset>
+    </form>
+
+    <!-- Referencia al archivo que contiene el código JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
